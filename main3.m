@@ -9,7 +9,7 @@ fir_nei = LC/(2^0.5); % 第一近邻原子距离 第二近邻距离为LC
 epsilon=0.6*fir_nei+0.4*LC; % 截断距离，两原子距离小于此距离，则认为两原子近邻
 %% Laod Data
 filename = 'test.data';
-[ box,wdata ] = laoddata2( filename );
+[ box,wdata ] = laoddata( filename );
 ordata = wdata(wdata(:,5)==2,2:4);
 neighbors = neighbor_period(ordata,box); % 为原子构建邻近原子对应表，考虑周期性
 [layer,setmath] = getlayer(neighbors); % 区分结构
@@ -23,7 +23,7 @@ wdata(wdata(:,5)>2,5)=0;
 wdata(wdata(:,5)==2,5) = layer; % 准备数据
 wdata(:,6) = wdata(:,5)-1; % 调整
 wdata(wdata(:,6)<0,6)=4;
-writedata2(filename,wdata) % 写入数据
+writedata(filename,wdata) % 写入数据
 
 
 

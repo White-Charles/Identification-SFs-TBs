@@ -4,10 +4,9 @@ function [neighbors]=neighbor_period(data,box)
 % box是3*2的矩阵,[xmin,xmax;ymin,ymax;zmin,zmax]，表示盒子的大小
 % new_data是需要考虑周期性的点
 % 
-addn=[];
 global epsilon % 调用全局变量
 all = size(data,1);
-num = (1:all)';
+num = (1:all);
 length = box(:,2)-box(:,1);
 alldata = [];
 allnum = [];
