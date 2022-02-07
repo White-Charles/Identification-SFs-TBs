@@ -16,13 +16,20 @@ This program realizes the interaction with ovito through `data` files, so `OVITO
 If you downloaded the source code，open a terminal in current directory and run: [main.m](main.m). There is already an example [test.data](test.data)  to test the program. The program will output a [copy_test.data](copy_test.data) to overwrite the [copy_test.data](copy_test.data) in the current directory.
 ## Usage
 1. Inputs
+
 (1) Fixed Cutoff
+
 Here, a threshold distance criterion is used to determine whether a pair of atoms are neighbors or not. The cutoff distance must be chosen according to the crystal structure at hand. For face-centered cubic (FCC) the cutoff radius must lie midway between the first and the second shell of neighbors. We choose a fixed cutoff distance equal to the average of the first and second disttance as the "default" value. OVITO also provides a list of optimal cutoff distances for FCC crystal structures formed by common pure elements. These optimal radii can be found in the Presets drop-down list of the Common Neighbor Analysis (CNA) modifier.
+
 (2) Lattice Constant
+
 Lattice constant is the lattice constant of FCC crystal structures formed by common pure elements or the average lattice constant of multicomponent alloy.The lattice constant determines the default value of the cutoff distance.
 Default value：LC = 3.6; % lattice constant of Cu
 
-(3) 
+(3) Data File
+
+Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. 
+ 
 2. Outputs
 
 
