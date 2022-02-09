@@ -29,7 +29,11 @@ Default value：LC = 3.6; % lattice constant of Cu
 (3) Data File
 
 Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. 
- 
+
+① Add File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis"
+
+![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png)
+
 2. Outputs
 
 
