@@ -14,6 +14,7 @@ This program realizes the interaction with ovito through `data` files, so `OVITO
   
 ## Quick Start
 If you downloaded the source code，open a terminal in current directory and run: [main.m](main.m). There is already an example [test.data](test.data)  to test the program. The program will output a [copy_test.data](copy_test.data) to overwrite the [copy_test.data](copy_test.data) in the current directory.
+
 ## Usage
 1. Inputs
 
@@ -30,13 +31,24 @@ Default value：LC = 3.6; % lattice constant of Cu
 
 Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. 
 
-① Add File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis"
-
 ![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png)
+
+① Laod File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis".  ③ Export File and select the format "LAMMPS Dump File". ④ Notice the order of particle properties to export. ⑤ All done.
+
+
 
 2. Outputs
 
+You will get a file in "LAMMPS Dump File" format, but the "Particle Type" represents the defect type rather than the atomic type. 
 
+![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture2.png)
+
+## Suggestion
+The detailed ideas and implementation methods of this project can be seen in the paper. This algorithm is programmed in matlab language. If there are developers with similar ideas, I recommend programming in python language, because ovito provides python interfaces, if you call these interfaces, the workload will be greatly reduced, and the project will be more convenient and beautiful.
+
+If developers still want to use matlab to implement their ideas, this project may provide a reference for ideas and functions on how to deal with box periodicity and how to build adjacent atom tables.
+
+If there are developers who want to further improve this project or want to realize their own ideas on the basis of this project, I would like to express my thanks and welcome. Since this is my first open source project, there may be imperfections. If you have any questions, you can email to baizhiwen@stu.xjtu.edu.cn.
 
 ## License
 Apache © Zhiwen Bai
