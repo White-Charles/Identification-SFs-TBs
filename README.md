@@ -1,7 +1,7 @@
 # Identification-SFs-TBs
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This program is an algorithm to identify stacking faults and twin boundaries  in FCC crystal in molecular dynamics. It can cooperate with `Ovito` to realize post-processing.
+This program is an algorithm to identify stacking faults and twin boundaries defects in FCC crystal in molecular dynamics. It can cooperate with `Ovito` to realize post-processing.
 
 This program performs the Atomic Neighborhood-Based Distinguishing Algorithm (ANBDA) for a particle system. The ANBDA is used to identify the defect structure in the FCC phase by analyzing the local structural environment of the atoms and their neighbors and display the results through color-coded particles to show the SFs, TBs, or other structures in the FCC.
 
@@ -29,9 +29,10 @@ Default value：LC = 3.6; % lattice constant of Cu
 
 (3) Data File
 
-Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. 
+Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. The steps are shown in Figure 1.
 
 ![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png)
+Figure 1
 
 ① Laod File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis". The modifier outputs the classification results as a new particle property named Structure Type. The structural type determined by the algorithm is encoded as an integer value:
 
@@ -53,6 +54,7 @@ You will get a file in "LAMMPS Dump File" format, but the "Particle Type" repres
 - 3 = HCP, hexagonal close-packed
  
 ![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture2.png)
+Figure 2, (a) The CoCrNi film, colored by (a) structure types and (c) defects types. (b) Non-HCP atoms are hidden. 
 
 ## Suggestion
 The detailed ideas and implementation methods of this project can be seen in the paper. This algorithm is programmed in matlab language. If there are developers with similar ideas, I recommend programming in python language, because ovito provides python interfaces, if you call these interfaces, the workload will be greatly reduced, and the project will be more convenient and beautiful.
