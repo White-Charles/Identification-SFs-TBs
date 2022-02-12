@@ -32,7 +32,7 @@ Default value：LC = 3.6; % lattice constant of Cu
 Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. The steps are shown in Figure 1.
 
 ![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png)
-Figure 1
+Figure.1
 
 ① Laod File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis". The modifier outputs the classification results as a new particle property named Structure Type. The structural type determined by the algorithm is encoded as an integer value:
 
@@ -54,7 +54,13 @@ You will get a file in "LAMMPS Dump File" format, but the "Particle Type" repres
 - 3 = HCP, hexagonal close-packed
  
 ![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture2.png)
-Figure 2, (a) The CoCrNi film, colored by (a) structure types and (c) defects types. (b) Non-HCP atoms are hidden. 
+Figure.2 (a) The CoCrNi film, colored by structure types. (b) Non-HCP atoms are hidden. (c) HCP atoms are colored defects types.
+
+3. Clustering algorithm
+
+Through the clustering algorithm, you can get more information about the crystal structure and defects, such as the number of TBs or SFs, the number of atoms in the TBs or SFs region, and how large the areas are. You can implementation the interactive process with Matlab software through the  and command line.
+![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture3.png)
+Figure.3 The output picture after the user starts the [main2.m](main2.m), the coordinates are cursor click position. (a) Defect structural clustering analysis (b) The TB is selected (c) The SF is selected (d) The HCP phase is selected.
 
 ## Suggestion
 The detailed ideas and implementation methods of this project can be seen in the paper. This algorithm is programmed in matlab language. If there are developers with similar ideas, I recommend programming in python language, because ovito provides python interfaces, if you call these interfaces, the workload will be greatly reduced, and the project will be more convenient and beautiful.
