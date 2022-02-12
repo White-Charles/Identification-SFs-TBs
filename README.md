@@ -31,7 +31,7 @@ Default value：LC = 3.6; % lattice constant of Cu
 
 Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. The steps are shown in Figure 1.
 
-<div align=center><img width="800" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png"/></div>
+<div align=center><img width="1890" height="1072" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png"/></div>
 Figure.1
 
 ① Laod File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis". The modifier outputs the classification results as a new particle property named Structure Type. The structural type determined by the algorithm is encoded as an integer value:
@@ -52,13 +52,13 @@ You will get a file in "LAMMPS Dump File" format, but the "Particle Type" repres
 - 1 = TBs, twin boundaries
 - 2 = SFs, stacking faults
 - 3 = HCP, hexagonal close-packed
- <div align=center><img width="600" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture2.png"/></div>
+ <div align=center><img width="778" height="422" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture2.png"/></div>
 Figure.2 (a) The CoCrNi film, colored by structure types. (b) Non-HCP atoms are hidden. (c) HCP atoms are colored defects types.
 
 3. Clustering algorithm
 
 Through the clustering algorithm, you can get more information about the crystal structure and defects, such as the number of TBs or SFs, the number of atoms in the TBs or SFs region, and how large the areas are. You can implementation the interactive process with Matlab software through the  and command line.
- <div align=center><img width="600" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture3.png"/></div>
+ <div align=center><img width="528" height="431" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture3.png"/></div>
 Figure.3 The output picture after the user starts the [main2.m](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/clustering%20algorithm/main2.m), the coordinates are cursor click position. (a) Defect structural clustering analysis (b) The TB is selected (c) The SF is selected (d) The HCP phase is selected.
 
 ## Suggestion
