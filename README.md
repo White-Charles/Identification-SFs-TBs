@@ -31,7 +31,8 @@ Default value：LC = 3.6; % lattice constant of Cu
 
 Atomic coordinates and structural type are stored in the data file. The format of the file is "LAMMPS Dump File", which could be written by Ovito. The steps are shown in Figure 1.
 
-![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png " width="1000px")
+<div align=center><img width="150" height="150" src="https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture.png"/></div>
+
 Figure.1
 
 ① Laod File and add modification. ② Select analysis modifier "Dislocation analysis (DXA)", "Ackland-Jones analysis" or "Common neighbor analysis". The modifier outputs the classification results as a new particle property named Structure Type. The structural type determined by the algorithm is encoded as an integer value:
