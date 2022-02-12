@@ -60,7 +60,7 @@ Figure.2 (a) The CoCrNi film, colored by structure types. (b) Non-HCP atoms are 
 
 Through the clustering algorithm, you can get more information about the crystal structure and defects, such as the number of TBs or SFs, the number of atoms in the TBs or SFs region, and how large the areas are. You can implementation the interactive process with Matlab software through the  and command line.
 ![image](https://github.com/White-Charles/Identification-SFs-TBs/blob/main/Readme_picture3.png)
-Figure.3 The output picture after the user starts the [main2.m](/clustering algorithm/main2.m), the coordinates are cursor click position. (a) Defect structural clustering analysis (b) The TB is selected (c) The SF is selected (d) The HCP phase is selected.
+Figure.3 The output picture after the user starts the [/clustering algorithm/main2.m](main2.m), the coordinates are cursor click position. (a) Defect structural clustering analysis (b) The TB is selected (c) The SF is selected (d) The HCP phase is selected.
 
 ## Suggestion
 The detailed ideas and implementation methods of this project can be seen in the paper. This algorithm is programmed in matlab language. If there are developers with similar ideas, I recommend programming in python language, because ovito provides python interfaces, if you call these interfaces, the workload will be greatly reduced, and the project will be more convenient and beautiful.
