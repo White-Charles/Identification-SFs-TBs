@@ -62,7 +62,7 @@ Figure.3 The output picture after the user starts the [main2.m](https://github.c
 ## Suggestion
 The detailed ideas and implementation methods of this project can be seen in the paper. This algorithm is programmed in matlab language. If there are developers with similar ideas, I recommend programming in python language, because ovito provides python interfaces, if you call these interfaces, the workload will be greatly reduced, and the project will be more convenient and beautiful.  
 If developers still want to use matlab to implement their ideas, this project may provide a reference for ideas and functions on how to deal with box periodicity and how to build adjacent atom tables.  
-If there are developers who want to further improve this project or want to realize their own ideas on the basis of this project, I would like to express my thanks and welcome. Since this is my first open source project, there may be imperfections. If you have any questions, you can email to baizhiwen@stu.xjtu.edu.cn.
+If there are developers who want to further improve this project or want to realize their own ideas on the basis of this project, I would like to express my thanks and welcome. Since this is my first open source project, there may be imperfections. If you have any questions, you can email to 20176227@cqu.edu.cn.
 
 ## License
 Apache © Zhiwen Bai
